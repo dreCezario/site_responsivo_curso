@@ -31,8 +31,8 @@
             <div class="first-section-content">
                 <h4>Ajude o algoritmo a ser mais certeiro</h4>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, temporibus illo molestiae nam, vel sequi tempora quod laboriosam accusamus in est sunt officiis, enim cum soluta! Eius deserunt odio aspernatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in aut voluptatem asperiores, dolor, eos soluta illo distinctio excepturi libero minus ipsam architecto quisquam. Distinctio tempore mollitia ratione recusandae sunt!</p><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde laboriosam repellat, quibusdam quaerat corrupti, rerum nulla amet cumque enim nemo id expedita excepturi similique quod. Explicabo natus unde fugiat minima.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, temporibus illo molestiae nam, vel sequi tempora quod laboriosam accusamus in est sunt officiis, enim cum soluta! Eius deserunt odio aspernatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in aut voluptatem asperiores, dolor, eos soluta illo distinctio excepturi libero minus ipsam architecto quisquam. Distinctio tempore mollitia ratione recusandae sunt!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta optio, cupiditate in ipsam dolore architecto, dolores minus repellendus consectetur mollitia, aliquid iste temporibus vel esse sed modi quo culpa harum?</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde laboriosam repellat, quibusdam quaerat corrupti, rerum nulla amet cumque enim nemo id expedita excepturi similique quod. Explicabo natus unde fugiat minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, harum minus quae, nesciunt veniam ab debitis deserunt iusto architecto aliquid laudantium expedita corporis, quo illum vero earum voluptatum? Id, aliquid.</p>
             </div>
             <div class="first-section-form">
                 <form id="formCadastro" class="formCadastro" method="GET" action="">
@@ -41,7 +41,7 @@
                             Nome:
                             <br>
                             <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="inputForm">
-                            <br>
+                            <br><br>
                             <span class="erro" id="span-nome"></span>
                         </label>
                     </div>
@@ -51,17 +51,17 @@
                             Email:
                             <br>
                             <input type="emai" name="email" id="email" placeholder="Digite seu email" class="inputForm">
-                            <br>
+                            <br><br>
                             <span class="erro" id="span-email"></span>
                         </label>
                     </div>
             
                     <div>
                         <label>
-                            Telefone:
+                            CPF:
                             <br>
-                            <input type="tel" name="tel" id="tel" placeholder="Digite seu nome" class="inputForm">
-                            <br>
+                            <input type="number" name="cpf" id="vpf" placeholder="Digite seu CPF" class="inputForm">
+                            <br><br>
                             <span class="erro" id="span-tel"></span>
                         </label>
                     </div>
@@ -70,16 +70,14 @@
                         <label>
                             Sexo:
                             <br>
-                            <select name="sexo" id="sexo" class="selectForm">
-                                <option value="">--Selecione o seu sexo--</option>
-                                <option value="masculino">Masculino</option>
-                                <option value="feminino">Feminino</option>
-                                <option value="outro">Outro</option>
-                            </select>
+                            <input type="checkbox" name="masculino" id="masculino">
+                            <span>Masculino</span>
+                            <input type="checkbox" name="feminino" id="feminino">
+                            <span>Feminino</span>
                             <span class="erro" id="span-sexo"></span>
                         </label>
                     </div>
-        
+                    <br>
                     <button type="submit" class="button" id="button"> Enviar</button>
                 </form>
             </div>
