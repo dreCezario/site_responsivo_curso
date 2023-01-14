@@ -8,6 +8,10 @@ body{
     font-family: Helvetica, sans-serif;
 }
 
+/*
+HEADER
+*/
+
 .center {
     max-width: 1100px;
     margin: 0 auto;
@@ -30,6 +34,10 @@ header {
     text-align: center;
     color: white;
 }
+
+/*
+FIRST-SECTION-CONTENT
+*/
 
 .main h4 {
     margin-bottom: 5px;
@@ -85,6 +93,11 @@ header {
     font-size: 15px;
 }
 
+/*
+FIRST-SECTION-CONTENT
+*/
+
+
 .first-section-form {
     margin-left: 2%;
     width: 48%;
@@ -93,6 +106,7 @@ header {
 
 .formCadastro label {
     color: #888888;
+    font-size: 15px;
 }
 
 
@@ -116,19 +130,30 @@ header {
 }
 
 .button {
+    background-color: #e4dfdf; /* Green */
+    border: none;
+    border-radius: 2px;
+    color: black;
     margin-left: 50px;
     width: 340px;
-    height: 0px;
-    background-color: #888888; /* Green */
+    height: 30px;
     border: 2px solid black;
-    border-radius: 5px;
-    color: black;
-    padding: 15px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 13px;
 }
 
 .button:hover {
     cursor: pointer;
     background-color: var(--color-secundary);
+}
+
+.erro{
+    margin-left: 50px;
+    color: red;
+}
+
+.inputError{
+    border: 2px solid red;
 }
