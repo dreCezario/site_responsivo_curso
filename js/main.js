@@ -46,7 +46,7 @@ formulario.onsubmit = function(e) {
         let span = document.querySelector('#span-cpf')
         span.innerText = 'Digite o número do CPF corretamente'
     }else{
-        inputTel.classList.remove('inputError')
+        inputCpf.classList.remove('inputError')
 
         let span = document.querySelector('#span-cpf')
         span.innerText = ' '
@@ -62,11 +62,11 @@ formulario.onsubmit = function(e) {
         span.innerText = 'Selecione um sexo'
     }
 
-    if(!masculino_check.checked  || !feminino_check.checked){
-        temErro = true
+    else if(!masculino_check.checked  || !feminino_check.checked){
+        temErro = false
         
         let span = document.querySelector('#span-sexo')
-        span.innerText = 'Selecione um sexo'
+        span.innerText = ''
     }
     
     }
