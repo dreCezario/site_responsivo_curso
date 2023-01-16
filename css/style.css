@@ -150,10 +150,11 @@ FIRST-SECTION-CONTENT
 }
 
 .erro{
-    margin-left: 50px;
+    margin-left: 0;
     color: red;
 }
 
 .inputError{
     border: 2px solid red;
 }
+

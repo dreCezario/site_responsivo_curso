@@ -42,16 +42,36 @@ formulario.onsubmit = function(e) {
         temErro = true
         inputCpf.classList.add('inputError')
 
+
         let span = document.querySelector('#span-cpf')
         span.innerText = 'Digite o número do CPF corretamente'
     }else{
         inputTel.classList.remove('inputError')
 
         let span = document.querySelector('#span-cpf')
-        span.innerText = ''
+        span.innerText = ' '
+    }
+
+    const masculino_check = document.querySelector('#masculino')
+    const feminino_check = document.querySelector('#feminino')
+
+    if(!masculino_check.checked  && !feminino_check.checked){
+        temErro = true
+        
+        let span = document.querySelector('#span-sexo')
+        span.innerText = 'Selecione um sexo'
+    }
+
+    if(!masculino_check.checked  || !feminino_check.checked){
+        temErro = true
+        
+        let span = document.querySelector('#span-sexo')
+        span.innerText = 'Selecione um sexo'
+    }
+    
     }
 
     if(!temErro){
         formulario.submit()
     }
-}
+
